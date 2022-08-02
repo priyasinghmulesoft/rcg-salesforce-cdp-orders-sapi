@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:snowflake="http://www.mulesoft.org/schema/mule/snowflake"
+	xmlns:azure-storage="http://www.mulesoft.org/schema/mule/azure-storage"
+	xmlns:azure-data-lake-storage="http://www.mulesoft.org/schema/mule/azure-data-lake-storage" xmlns:sap="http://www.mulesoft.org/schema/mule/sap" xmlns:s3="http://www.mulesoft.org/schema/mule/s3" xmlns:sdc="http://www.mulesoft.org/schema/mule/sdc" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/sdc http://www.mulesoft.org/schema/mule/sdc/current/mule-sdc.xsd
+http://www.mulesoft.org/schema/mule/s3 http://www.mulesoft.org/schema/mule/s3/current/mule-s3.xsd
+http://www.mulesoft.org/schema/mule/sap http://www.mulesoft.org/schema/mule/sap/current/mule-sap.xsd
+http://www.mulesoft.org/schema/mule/azure-data-lake-storage http://www.mulesoft.org/schema/mule/azure-data-lake-storage/current/mule-azure-data-lake-storage.xsd
+http://www.mulesoft.org/schema/mule/azure-storage http://www.mulesoft.org/schema/mule/azure-storage/current/mule-azure-storage.xsd
+http://www.mulesoft.org/schema/mule/snowflake http://www.mulesoft.org/schema/mule/snowflake/current/mule-snowflake.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="c4987842-2b9e-4a7d-8c22-a37f392055f4" >
+		<http:listener-connection host="${http.host}" port="${http.port}" />
+	</http:listener-config>
+	<sdc:sdc-config name="Salesforce_CDP_Sdc_config" doc:name="Salesforce CDP Sdc config" doc:id="edc274d6-4dca-48f4-929b-940eb5f7e6fe" >
+		<sdc:oauth-user-pass-connection clientId="${cdp.key}" clientSecret="${cdp.secret}" username="${cdp.user}" password="${cdp.pass}" audienceUrl="https://login.salesforce.com" />
+	</sdc:sdc-config>
+	<configuration-properties doc:name="Configuration properties" doc:id="3a67955d-c6a4-447c-87fc-cb3be4fc64a3" file="config.yaml" />
+	<flow name="rcg-oms-to-salesforce-cdp-orderHeader-flow" doc:id="6c844be1-464d-4cab-91cc-5f8a4cf8bf0e" >
+		<http:listener doc:name="Listener" doc:id="f4ebf422-4071-4ec9-a58c-2c381db4ae2e" config-ref="HTTP_Listener_config" path="/api/orderHeader"/>
+		<ee:transform doc:name="Transform request body to CDP data format" doc:id="35a8803d-752a-4a4d-be8c-e9e1fccd3261" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	data: payload
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<until-successful maxRetries="5" doc:name="Until Successful" doc:id="7a3057f7-1618-4d9c-b8e2-71db80b6d0c0" millisBetweenRetries="2000">
+			<sdc:insert-objects doc:name="Streaming - Insert Order Header" doc:id="d9c49ce5-c7b4-4588-bf07-ed88987bd292" config-ref="Salesforce_CDP_Sdc_config" sourceNameUriParam="Mulesoft_Demo" objectNameUriParam="orderHeader" />
+		</until-successful>
+		<ee:transform doc:name="Transform Message" doc:id="1fde3145-0f14-43b2-975d-68ef0a19b3ca" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	"message" : "Order Headers Successfully Sent To CDP"
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="rcg-oms-to-salesforce-cdp-orderDetails-flow" doc:id="0ca53656-e5f8-4d74-9b4e-a9e1df207a13" >
+		<http:listener doc:name="Listener" doc:id="ec8dbb91-e71d-488f-8194-301705489846" config-ref="HTTP_Listener_config" path="/api/orderDetails"/>
+		<ee:transform doc:name="Transform request body to CDP data format" doc:id="6eeeea4f-9ccc-4b62-8b8a-f3be5fe6420f">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{
+	data: payload
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<until-successful maxRetries="5" doc:name="Until Successful" doc:id="9b403f42-d9e3-469f-b0d6-cc860a49ff93" millisBetweenRetries="6000">
+			<sdc:insert-objects doc:name="Streaming - Insert Order Details" doc:id="6a0efa7e-f281-4723-9367-eac88109da2e" config-ref="Salesforce_CDP_Sdc_config" sourceNameUriParam="Mulesoft_Demo" objectNameUriParam="orderDetails" />
+		</until-successful>
+		<logger level="INFO" doc:name="Log Response" doc:id="c64f8c7f-b927-43f4-b797-2198b0144811" message="details inserted successfully" />
+	</flow>
+</mule>

@@ -1,0 +1,101 @@
+orderID,customerID,purchaseDate,customerEmail,deliveryMethod,productName,productSKU,productQuantity,productUnitPrice,productSalePrice,productSubTotalAmount
+Ste11063152364,Cu1,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Verto Approach,1050112AFIAAR,2,120.00,108.00,240.00
+Ste1106315236,Cu00001,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Women's Discovery 2 Jacket,2010175AVVACC,1,99.00,99.00,99.00
+Ste1106315234,Cu0022,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Climber Mid,1050632BE3AAN,3,110.00,99.00,330.00
+Ste1106315234,Cu01,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Boys' Resolve Reflective Jacket,3010498AC8AEO,1,70.00,63.00,70.00
+Ste198235464,Cu001,3/10/2022,r.morris.52881@gmail.com,In-Store Pickup,Toddler Pill Hoodie,3010499A8OACT,4,99.00,89.10,396.00
+Ste110631364,Cu1,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Verto Approach,1050112AFIAA,2,120.00,108.00,240.00
+Ste110631364,Cu00001,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Women's Discovery 2 Jacket,2010175AVVAC,1,99.00,99.00,99.00
+Ste110632364,Cu0022,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Climber Mid,1050632BE3AA,3,110.00,99.00,330.00
+Ste110652364,Cu01,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Boys' Resolve Reflective Jacket,3010498AC8AE,1,70.00,63.00,70.00
+Ste198547364,Cu001,3/10/2022,r.morris.52881@gmail.com,In-Store Pickup,Toddler Pill Hoodie,3010499A8OAC,4,99.00,89.10,396.00
+Ste110631523,Cu21,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Verto Approach,1050112AFIA,2,120.00,108.00,240.00
+Ste110631523,Cu20001,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Women's Discovery 2 Jacket,2010175AVVA,1,99.00,99.00,99.00
+Ste110631523,Cu2022,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Climber Mid,1050632BE3A,3,110.00,99.00,330.00
+Ste110631523,Cu201,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Boys' Resolve Reflective Jacket,3010498AC8A,1,70.00,63.00,70.00
+Ste19823546,Cu2001,3/10/2022,r.morris.52881@gmail.com,In-Store Pickup,Toddler Pill Hoodie,3010499A8OA,4,99.00,89.10,396.00
+Ste1106314,Cu21,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Verto Approach,1050112AFI,2,120.00,108.00,240.00
+Ste1106364,Cu200001,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Women's Discovery 2 Jacket,2010175AVV,1,99.00,99.00,99.00
+Ste11063264,Cu20022,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Climber Mid,1050632BE3,3,110.00,99.00,330.00
+Ste11065264,Cu201,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Boys' Resolve Reflective Jacket,3010498AC8,1,70.00,63.00,70.00
+Ste19847364,Cu2001,3/10/2022,r.morris.52881@gmail.com,In-Store Pickup,Toddler Pill Hoodie,3010499A8O,4,99.00,89.10,396.00
+Ste11063152,Cu21,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Verto Approach,1050112AFI,2,120.00,108.00,240.00
+Ste11063153,Cu20001,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Women's Discovery 2 Jacket,2010175AVV,1,99.00,99.00,99.00
+Ste11063123,Cu2022,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Climber Mid,1050632BE3,3,110.00,99.00,330.00
+Ste11063523,Cu201,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Boys' Resolve Reflective Jacket,3010498AC8,1,70.00,63.00,70.00
+Ste1982546,Cu2001,3/10/2022,r.morris.52881@gmail.com,In-Store Pickup,Toddler Pill Hoodie,3010499A8O,4,99.00,89.10,396.00
+Ste1163148,Cu21,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Verto Approach,1050112AF,2,120.00,108.00,240.00
+Ste106364,Cu200001,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Women's Discovery 2 Jacket,2010175AV,1,99.00,99.00,99.00
+Ste110632,Cu20022,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Climber Mid,1050632BE,3,110.00,99.00,330.00
+Ste110664,Cu201,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Boys' Resolve Reflective Jacket,3010498AC,1,70.00,63.00,70.00
+Ste198464,Cu2001,3/10/2022,r.morris.52881@gmail.com,In-Store Pickup,Toddler Pill Hoodie,3010499A8,4,99.00,89.10,396.00
+Ste911063152,Cu921,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Verto Approach,1050112AF,2,120.00,108.00,240.00
+Ste911063153,Cu920001,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Women's Discovery 2 Jacket,2010175AV,1,99.00,99.00,99.00
+Ste911063123,Cu92022,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Climber Mid,1050632BE,3,110.00,99.00,330.00
+Ste911063523,Cu9201,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Boys' Resolve Reflective Jacket,3010498AC,1,70.00,63.00,70.00
+Ste91982546,Cu92001,3/10/2022,r.morris.52881@gmail.com,In-Store Pickup,Toddler Pill Hoodie,3010499A8,4,99.00,89.10,396.00
+Ste91163148,Cu921,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Verto Approach,1050112A,2,120.00,108.00,240.00
+Ste9106364,Cu9200001,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Women's Discovery 2 Jacket,2010175A,1,99.00,99.00,99.00
+Ste9110632,Cu920022,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Climber Mid,1050632B,3,110.00,99.00,330.00
+Ste9110664,Cu9201,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Boys' Resolve Reflective Jacket,3010498C,1,70.00,63.00,70.00
+Ste9198464,Cu92001,3/10/2022,r.morris.52881@gmail.com,In-Store Pickup,Toddler Pill Hoodie,30104998,4,99.00,89.10,396.00
+Ste3911063152,Cu33921,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Verto Approach,1050112A,2,120.00,108.00,240.00
+Ste3911063153,Cu3920001,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Women's Discovery 2 Jacket,2010175A,1,99.00,99.00,99.00
+Ste3911063123,Cu392022,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Climber Mid,1050632B,3,110.00,99.00,330.00
+Ste3911063523,Cu39201,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Boys' Resolve Reflective Jacket,3010498A,1,70.00,63.00,70.00
+Ste391982546,Cu92001,3/10/2022,r.morris.52881@gmail.com,In-Store Pickup,Toddler Pill Hoodie,3010499A,4,99.00,89.10,396.00
+Ste391163148,Cu33921,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Verto Approach,1050112,2,120.00,108.00,240.00
+Ste39106364,Cu9200001,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Women's Discovery 2 Jacket,2010175,1,99.00,99.00,99.00
+Ste39110632,Cu920022,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Climber Mid,1050632,3,110.00,99.00,330.00
+Ste39110664,Cu339201,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Boys' Resolve Reflective Jacket,3010498,1,70.00,63.00,70.00
+Ste39198464,Cu392001,3/10/2022,r.morris.52881@gmail.com,In-Store Pickup,Toddler Pill Hoodie,3010499,4,99.00,89.10,396.00
+Ste811063152364,Cu3331,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Verto Approach,105012AFIAAR,2,120.00,108.00,240.00
+Ste81106315236,Cu030001,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Women's Discovery 2 Jacket,201175AVVACC,1,99.00,99.00,99.00
+Ste11806315234,Cu03022,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Climber Mid,105063B3AAN,3,110.00,99.00,330.00
+Ste11806315234,Cu031,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Boys' Resolve Reflective Jacket,301049AC8AEO,1,70.00,63.00,70.00
+Ste1988235464,Cu0301,3/10/2022,r.morris.52881@gmail.com,In-Store Pickup,Toddler Pill Hoodie,301049A8OACT,4,99.00,89.10,396.00
+Ste1180631364,Cu3331,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Verto Approach,1050112FIAA,2,120.00,108.00,240.00
+Ste1106831364,Cu300001,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Women's Discovery 2 Jacket,20101AVVAC,1,99.00,99.00,99.00
+Ste1108632364,Cu00322,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Climber Mid,10502BE3AA,3,110.00,99.00,330.00
+Ste1180652364,Cu03331,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Boys' Resolve Reflective Jacket,30198AC8AE,1,70.00,63.00,70.00
+Ste1985478364,Cu0301,3/10/2022,r.morris.52881@gmail.com,In-Store Pickup,Toddler Pill Hoodie,30104A8OAC,4,99.00,89.10,396.00
+Ste1180631523,Cu33321,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Verto Approach,105011AFIA,2,120.00,108.00,240.00
+Ste1106831523,Cu230001,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Women's Discovery 2 Jacket,20175AVVA,1,99.00,99.00,99.00
+Ste1106315823,Cu203322,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Climber Mid,105062BE3A,3,110.00,99.00,330.00
+Ste1810631523,Cu20331,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Boys' Resolve Reflective Jacket,30498AC8A,1,70.00,63.00,70.00
+Ste198283546,Cu203301,3/10/2022,r.morris.52881@gmail.com,In-Store Pickup,Toddler Pill Hoodie,301099A8OA,4,99.00,89.10,396.00
+Ste11806314,Cu2133,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Verto Approach,10501y12AFI,2,120.00,108.00,240.00
+Ste18106364,Cu20001,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Women's Discovery 2 Jacket,2010G75AVV,1,99.00,99.00,99.00
+Ste811063264,Cu2022,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Climber Mid,10506532BE3,3,110.00,99.00,330.00
+Ste181065264,Cu20331,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Boys' Resolve Reflective Jacket,30104G98AC8,1,70.00,63.00,70.00
+Ste819847364,Cu20301,3/10/2022,r.morris.52881@gmail.com,In-Store Pickup,Toddler Pill Hoodie,3010G499A8O,4,99.00,89.10,396.00
+Ste118063152,Cu2331,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Verto Approach,1050V112AFI,2,120.00,108.00,240.00
+Ste118063153,Cu3001,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Women's Discovery 2 Jacket,20101B75AVV,1,99.00,99.00,99.00
+Ste110638123,Cu2322,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Climber Mid,105063V2BE3,3,110.00,99.00,330.00
+Ste110683523,Cu23301,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Boys' Resolve Reflective Jacket,301049F8AC8,1,70.00,63.00,70.00
+Ste19882546,Cu20301,3/10/2022,r.morris.52881@gmail.com,In-Store Pickup,Toddler Pill Hoodie,3010499AF8O,4,99.00,89.10,396.00
+Ste11631848,Cu21333,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Verto Approach,1050112FAF,2,120.00,108.00,240.00
+Ste1063684,Cu3001,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Women's Discovery 2 Jacket,2010175FAV,1,99.00,99.00,99.00
+Ste1106382,Cu20322,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Climber Mid,105063F2BE,3,110.00,99.00,330.00
+Ste1106864,Cu20331,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Boys' Resolve Reflective Jacket,30104F98AC,1,70.00,63.00,70.00
+Ste1984864,Cu203301,3/10/2022,r.morris.52881@gmail.com,In-Store Pickup,Toddler Pill Hoodie,3010499FA8,4,99.00,89.10,396.00
+Ste9811063152,Cu93321,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Verto Approach,105S0112AF,2,120.00,108.00,240.00
+Ste9181063153,Cu92301,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Women's Discovery 2 Jacket,2010S175AV,1,99.00,99.00,99.00
+Ste9811063123,Cu920322,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Climber Mid,1050632SBE,3,110.00,99.00,330.00
+Ste8911063523,Cu923301,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Boys' Resolve Reflective Jacket,30S10498AC,1,70.00,63.00,70.00
+Ste891982546,Cu923001,3/10/2022,r.morris.52881@gmail.com,In-Store Pickup,Toddler Pill Hoodie,3010499SA8,4,99.00,89.10,396.00
+Ste891163148,Cu93321,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Verto Approach,10501SS12A,2,120.00,108.00,240.00
+Ste910688364,Cu920301,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Women's Discovery 2 Jacket,201017SS5A,1,99.00,99.00,99.00
+Ste911880632,Cu923322,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Climber Mid,10BB50632B,3,110.00,99.00,330.00
+Ste91106688,Cu920331,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Boys' Resolve Reflective Jacket,30104BB98C,1,70.00,63.00,70.00
+Ste91984684,Cu920301,3/10/2022,r.morris.52881@gmail.com,In-Store Pickup,Toddler Pill Hoodie,3010BB4998,4,99.00,89.10,396.00
+Ste391163152,Cu3321,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Verto Approach,1050BB112A,2,120.00,108.00,240.00
+Ste391063153,Cu39201,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Women's Discovery 2 Jacket,2010CC175A,1,99.00,99.00,99.00
+Ste391063123,Cu32022,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Climber Mid,105CC0632B,3,110.00,99.00,330.00
+Ste391106323,Cu3921,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Boys' Resolve Reflective Jacket,30104SS98A,1,70.00,63.00,70.00
+Ste39198546,Cu920071,3/10/2022,r.morris.52881@gmail.com,In-Store Pickup,Toddler Pill Hoodie,30HH10499A,4,99.00,89.10,396.00
+Ste391163148,Cu339721,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Verto Approach,105HH0112,2,120.00,108.00,240.00
+Ste39068364,Cu927001,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Women's Discovery 2 Jacket,20101HH75,1,99.00,99.00,99.00
+Ste39811632,Cu927722,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Men's Climber Mid,1050HH632,3,110.00,99.00,330.00
+Ste39107664,Cu3392071,5/12/2022,r.morris.52881@gmail.com,Ship to Home,Boys' Resolve Reflective Jacket,301HH0498,1,70.00,63.00,70.00
+Ste398198464,Cu3920701,3/10/2022,r.morris.52881@gmail.com,In-Store Pickup,Toddler Pill Hoodie,30104HH99,4,99.00,89.10,396.00

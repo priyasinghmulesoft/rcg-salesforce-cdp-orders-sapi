@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<types:mule xmlns:types="http://www.mulesoft.org/schema/mule/types">
+  <types:catalog>
+    <types:type name="order_header" format="csv">
+      <types:shape format="weave" example="examples/orderheader.csv"><![CDATA[%dw 2.0
+
+type order_header = Array<{|  orderID: String,   customerID: String,   customerEmail: String,   customerFirstName: String,   customerLastName: String,   purchaseDate: String,   purchaseChannel: String,   billingAddress1: String,   billingAddress2: String,   billingCity: String,   billingState: String,   billingPostalCode: String,   billingCountry: String,   shippingAddress1: String,   shippingAddress2: String,   shippingCity: String,   shippingState: String,   shippingPostalCode: String,   shippingCountry: String,   estimatedDeliveryDate: String,   actualDeliveryDate: String,   numberOfItems: String,   totalAmount: String,   storeID: String,   paymentMethod: String|}> {"isQuotedString": "false",
+"header": "true",
+"headerLineNumber": "0"}
+
+]]></types:shape>
+      <types:properties>
+        <types:property name="headerLineNumber" value="0"/>
+        <types:property name="header" value="true"/>
+        <types:property name="isQuotedString" value="false"/>
+      </types:properties>
+    </types:type>
+    <types:type name="order_detail" format="csv">
+      <types:shape format="weave" example="input/orderdetail.csv"><![CDATA[%dw 2.0
+
+type order_detail = Array<{|  orderID: String,   customerID: String,   purchaseDate: String,   customerEmail: String,   deliveryMethod: String,   productName: String,   productSKU: String,   productQuantity: String,   productUnitPrice: String,   productSalePrice: String,   productSubTotalAmount: String|}> {"isQuotedString": "false",
+"header": "true",
+"headerLineNumber": "0"}
+
+]]></types:shape>
+      <types:properties>
+        <types:property name="headerLineNumber" value="0"/>
+        <types:property name="header" value="true"/>
+        <types:property name="isQuotedString" value="false"/>
+      </types:properties>
+    </types:type>
+  </types:catalog>
+  <types:enrichment select="#7c6b5720-8598-4c0d-99cf-cf649735ed6f">
+    <types:processor-declaration>
+      <types:input-event>
+        <types:message>
+          <types:payload type="order_header"/>
+        </types:message>
+      </types:input-event>
+    </types:processor-declaration>
+  </types:enrichment>
+  <types:enrichment select="#f2ca2962-cf96-415d-b4b5-6e8985d4bac0">
+    <types:processor-declaration>
+      <types:input-event>
+        <types:message>
+          <types:payload type="order_detail"/>
+        </types:message>
+      </types:input-event>
+    </types:processor-declaration>
+  </types:enrichment>
+  <types:enrichment select="#35a8803d-752a-4a4d-be8c-e9e1fccd3261">
+    <types:processor-declaration>
+      <types:input-event>
+        <types:message>
+          <types:payload type="order_header"/>
+        </types:message>
+      </types:input-event>
+    </types:processor-declaration>
+  </types:enrichment>
+  <types:enrichment select="#6eeeea4f-9ccc-4b62-8b8a-f3be5fe6420f">
+    <types:processor-declaration>
+      <types:input-event>
+        <types:message>
+          <types:payload type="order_detail"/>
+        </types:message>
+      </types:input-event>
+    </types:processor-declaration>
+  </types:enrichment>
+</types:mule>
